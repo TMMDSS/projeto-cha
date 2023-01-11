@@ -14,12 +14,14 @@
 }
 body {
     
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--cor-seg);
 }
 header {
     background-color:var(--cor-header-footer);
     color: white;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    margin-bottom: 10px;
     padding: 50px;
     text-align: center;
     font-size: 5vh;
@@ -29,10 +31,53 @@ header {
 header > p {
     padding-top: 15px;
 }
-section.normal {background-color: white;}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--cor-seg);
+    text-decoration: underline;
+}
+section {
+    font-family: var(--fonteofc);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 3.5vw;
+}
+section.normal {
+    background-color: white;
+}
+section.imagem {
+    box-shadow: inset 6px 6px 13px black;
+
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.192);
+    width: 400px;
+    padding: 30px;
+}
+section#img01 {
+    background-image: url(imagens/fazendo-o-chá-9539438.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img02 {
+    background-image: url(https://www.sweetesthome.com.br/wp-content/uploads/2021/02/JLu-Dhy-segurando-xi%CC%81cara-1024x682.jpg);
+    font-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
 
 
 footer {
     background-color: var(--cor-header-footer);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: var(--fonteofc);
+    font-size: 2.5vh;
 }
 
